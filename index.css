@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+  }
+  #todo-app {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  span{
+    font-size: 13.5px;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+  .completed {
+    text-decoration: line-through;
+    color: rgb(255, 0, 0);
+  }
+
+  li .toggle{
+    background-color: #08a21d;
+    color: white;
+  }
+  li .delete{
+    background-color: #d40505;
+    color: white;
+  }
+  li .edit{
+    background-color: #ffbf00;
+    color: white;
+  }
+  li .up{
+    background-color: #1d84f3;
+    color: white;
+  }
+  li .down{
+    background-color: #1d84f3;
+    color: white;
+  }
+  .btn {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  form {
+    display: flex;
+    gap: 10px;
+  }
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #383838;
+    color: white;
+    cursor: pointer;
+  }
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .material-symbols-outlined {
+    font-size: 20px;
+    vertical-align: middle;
+}
